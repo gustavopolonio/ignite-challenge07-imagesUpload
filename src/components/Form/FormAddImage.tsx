@@ -142,29 +142,28 @@ export function FormAddImage({ closeModal }: FormAddImageProps): JSX.Element {
           setLocalImageUrl={setLocalImageUrl}
           setError={setError}
           trigger={trigger}
-          name='fileInput'
           // TODO SEND IMAGE ERRORS
-          error={errors.fileInput}
+          error={errors.image}
           // TODO REGISTER IMAGE INPUT WITH VALIDATIONS
-          {...register('fileInput', formValidations.image)}
+          {...register('image', formValidations.image)}
         />
 
         <TextInput
           placeholder="Título da imagem..."
-          name='imageTitle'
+          // name='imageTitle'
           // TODO SEND TITLE ERRORS
-          error={errors.imageTitle}
+          error={errors.title}
           // TODO REGISTER TITLE INPUT WITH VALIDATIONS
-          {...register('imageTitle', formValidations.title)}
+          {...register('title', formValidations.title)}
         />
 
         <TextInput
           placeholder="Descrição da imagem..."
-          name='imageDescription'
+          // name='imageDescription'
           // TODO SEND DESCRIPTION ERRORS
-          error={errors.imageDescription}
+          error={errors.description}
           // TODO REGISTER DESCRIPTION INPUT WITH VALIDATIONS
-          {...register('imageDescription', formValidations.description)}
+          {...register('description', formValidations.description)}
         />
       </Stack>
 
